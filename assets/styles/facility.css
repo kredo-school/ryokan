@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap");
+
+/* color
+#1B1B1B
+#B2B2B2
+#707070
+#7F7448
+#353535
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* header */
+
+.nav {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+}
+#logo {
+  width: 50px;
+  color: #fff;
+}
+.nav a,
+h2 {
+  color: #fff;
+  text-decoration: none;
+  padding-top: 5px;
+}
+.nav a:hover {
+  color: #b2b2b2;
+}
+.nav-link {
+  display: flex;
+}
+.nav-link li {
+  padding-top: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+#reservation {
+  background: #7f7448;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-left: auto;
+}
+#reservation:hover {
+  opacity: 0.5;
+}
+/* end of nav */
+/* banner */
+.garden_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.garden_img img {
+  width: 600px;
+}
+
+.garden_text {
+  margin-left: 20px;
+}
+.garden_text h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+.garden_text p {
+  width: 300px;
+  padding-top: 30px;
+  padding-right: 30px;
+  letter-spacing: 2px;
+}
+/* end of banner */
+
+/* lounge */
+.lounge_wrapper {
+  width: 80%;
+  margin: 100px auto;
+}
+.lounge_container {
+  display: flex;
+}
+.lounge_text {
+  width: 300px;
+  padding-top: 30px;
+  padding-right: 30px;
+  letter-spacing: 2px;
+}
+.lounge_text h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+.lounge_img img {
+  width: 350px;
+}
+
+#cocktail {
+  width: 130px;
+  height: 260px;
+}
+/* salon */
+
+.salon_wrapper {
+  width: 90%;
+  margin: 100px auto;
+}
+.salon_container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px auto;
+}
+.salon_text {
+  width: 300px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+.salon_text h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.salon_img img {
+  height: 250px;
+}
+/* footer */
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  margin-top: 40px;
+}
+.footer_contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_widgets {
+  height: 200px;
+  color: #fff;
+  padding: 30px 0;
+}
+.footer_widgets h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  /* padding-left: 30px; */
+  padding-bottom: 40px;
+}
+.footer_widgets p {
+  font-size: 20px;
+}
+.footer_widgets i {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 70px;
+}
+iframe {
+  margin: 20px;
+}
+#access {
+  margin-left: 40px;
+}

@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap");
+
+/* color
+#1B1B1B
+#B2B2B2
+#707070
+#7F7448
+#353535
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* header */
+
+.nav {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+}
+.nav a,
+h2 {
+  padding-top: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #b2b2b2;
+}
+.nav-link {
+  display: flex;
+}
+.nav-link li {
+  padding-top: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#logo {
+  width: 50px;
+  color: #fff;
+}
+#reservation {
+  background: #7f7448;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-left: auto;
+}
+#reservation:hover {
+  opacity: 0.5;
+}
+
+/* end of nav */
+
+/* banner */
+/* .banner {
+  background-image: url(../images/onsen2.jpg);
+  width: 80%;
+  height: 600px;
+  background-size: cover;
+  margin: 0 auto;
+} */
+.banner_title {
+  display: none;
+}
+#banner {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#banner ul {
+  position: relative;
+  /* margin: auto; */
+}
+#banner ul li {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 600px;
+
+  background-color: #b2b2b2;
+  z-index: 1;
+}
+
+#banner ul li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+a.control_next,
+a.control_prev {
+  position: absolute;
+  top: 40%;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 8;
+}
+
+a.control_next {
+  right: 0;
+}
+a.control_prev {
+  left: 0;
+}
+
+.menu,
+#close,
+#open_rsv {
+  display: none;
+}
+.rsv_btn {
+  display: none;
+}
+/* end of banner */
+
+/* about */
+.about_wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.about_text {
+  flex: 1;
+  margin-left: 50px;
+}
+.about_text h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about_text p {
+  line-height: 1.5em;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.about_img {
+  flex: 1;
+  width: 100%;
+  height: 100px;
+}
+/* end of about */
+
+/* rooms */
+.rooms_title {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #353535;
+  margin-top: 100px;
+}
+.rooms_title h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
+}
+/* end of about */
+
+/* rooms */
+
+.rooms_wrapper {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.rooms_contents {
+  width: 250px;
+  height: 300px;
+  background-color: #eaeaea;
+  margin: 10px;
+}
+.rooms_contents:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.rooms_contents img {
+  width: 250px;
+  height: 180px;
+  padding: 23px;
+}
+.rooms_contents p {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.rooms_contents button {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #353535;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 10px;
+
+  display: inline-block;
+  margin: 20px 75px;
+}
+.rooms_contents button:hover {
+  opacity: 0.5;
+}
+#capa_btn {
+  background-color: #b2b2b2;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 5px;
+  line-height: 5px;
+}
+.toggleSakura span,
+.toggleKaede span,
+.toggleFuji span,
+.toggleTsubaki span {
+  font-size: 17px;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+#toggle_s {
+  /* background: url(../images/room_sakura.jpg); */
+  /*   
+  background-size: cover;
+  background-repeat: none; */
+  background: #fff;
+  border: 1px solid black;
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+#toggle_s img,
+#toggle_k img,
+#toggle_f img,
+#toggle_t img {
+  width: 380px;
+}
+
+#toggle_k {
+  position: absolute;
+  background: #fff;
+  border: 1px solid black;
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+#toggle_f {
+  /* background: url(../images/room_fuji.jpg);
+    background-size: cover;
+    background-repeat: none; */
+  background: #fff;
+  border: 1px solid black;
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+#toggle_t {
+  /* background: url(../images/room_tsubaki.jpeg);
+  background-size: cover;
+  background-repeat: none; */
+  background: #fff;
+  border: 1px solid black;
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+#toggle_s,
+#toggle_k,
+#toggle_f,
+#toggle_t {
+  color: #2a2a2a;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#closeSakura,
+#closeKaede,
+#closeFuji,
+#closeTsubaki {
+  color: #2a2a2a;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+
+/* end of rooms */
+
+/* reservation */
+.reservation_wrapper {
+  width: 80%;
+  height: 450px;
+  background-color: #353535;
+  margin: 0 auto;
+  position: relative;
+}
+.reservation_title {
+  font-size: 20px;
+  font-weight: lighter;
+  display: inline-block;
+
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 40%;
+}
+.res_date {
+  position: absolute;
+  top: 20%;
+  /* left: 20%; */
+}
+
+input,
+label,
+select {
+  width: 50%;
+  display: inline-block;
+  margin: 7px 70px;
+}
+label {
+  color: #fff;
+}
+
+#check {
+  background-color: #7f7448;
+  color: #fff;
+  border: none;
+  padding: 7px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#check:hover {
+  opacity: 0.5;
+  transition: ease-in-out;
+}
+#num_nights,
+#num_guests,
+#num_rooms {
+  padding: 5px 10px;
+}
+/* end of reservation */
+
+/* footer */
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  margin-top: 40px;
+}
+.footer_contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_widgets {
+  height: 200px;
+  color: #fff;
+  padding: 30px 0;
+}
+.footer_widgets h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  /* padding-left: 30px; */
+  padding-bottom: 40px;
+}
+.footer_widgets p {
+  font-size: 20px;
+}
+.footer_widgets i {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 70px;
+}
+iframe {
+  margin: 20px;
+}
+#access {
+  margin-left: 40px;
+}
+
+/* top */
+
+.top {
+  background: #7f7448;
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+
+/* end of desktop */
+
+/* tablet */
+@media (max-width: 768px) {
+  #banner {
+    height: 400px;
+  }
+  .rooms_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+.toggleSakura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* mobile */
+
+@media (max-width: 568px) {
+  .nav {
+    display: none;
+  }
+  .banner_title {
+    background-color: black;
+    display: flex;
+  }
+  .banner_title h2 {
+    padding-top: 10px;
+  }
+  .menu {
+    display: block;
+  }
+  .overlay {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    overflow: hidden;
+    transition: 1200ms ease-in-out;
+    z-index: 999;
+  }
+  .overlay ul {
+    margin: auto;
+    list-style: none;
+  }
+  .overlay li a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .overlay ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  #open {
+    color: #fff;
+    padding: 3px 10px;
+    position: absolute;
+    top: -1%;
+    right: 10%;
+    margin: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 2;
+  }
+  #open:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+  }
+  #close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+
+    transition: 1s ease;
+  }
+  #close:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .rsv_btn {
+    display: block;
+    background-color: #7f7448;
+    color: #fff;
+    padding: 3px 10px;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    margin: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .rsv_btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .rsv_btn a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #banner {
+    height: 300px;
+    width: 400px;
+  }
+  /* .banner ul li {
+    width: 300px;
+  }
+  .banner ul li img {
+    width: 100%;
+  } */
+  .about_wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .about_text {
+    color: #2a2a2a;
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  .rooms_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .rooms_contents {
+    width: 300px;
+    height: 100px;
+    position: relative;
+  }
+
+  .rooms_contents img {
+    display: none;
+  }
+  .rooms_contents p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+  }
+
+  #sakura {
+    background-image: url(../images/room_sakura.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+  }
+  #kaede {
+    background-image: url(../images/room_kaede.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+  }
+
+  #fuji {
+    background-image: url(../images/room_fuji.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+
+    margin: 20px;
+  }
+
+  #tsubaki {
+    background-image: url(../images/room_tsubaki.jpeg);
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    background-repeat: no-repeat;
+  }
+  /* #capa_btn {
+    position: absolute;
+    top: 23%;
+    left: 25px;
+  } */
+  .rooms_contents button {
+    position: absolute;
+    top: 23%;
+    left: 25px;
+  }
+
+  .reservation_title {
+    position: absolute;
+    left: 30%;
+  }
+
+  #toggle_s {
+    /* background: url(../images/room_sakura.jpg);
+
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 200px;
+    width: 350px;
+    top: 10%;
+    left: 10%; */
+    visibility: hidden;
+  }
+  #toggle_k {
+    /* background: url(../images/room_kaede.jpg);
+
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 200px;
+    width: 350px;
+    top: 10%;
+    left: 10%; */
+    visibility: hidden;
+  }
+  #toggle_f {
+    /* background: url(../images/room_fuji.jpg);
+
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 200px;
+    width: 350px;
+    top: 10%;
+    left: 10%; */
+    visibility: hidden;
+  }
+  #toggle_t {
+    /* background: url(../images/room_tsubaki.jpeg);
+
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 200px;
+    width: 350px;
+    top: 10%;
+    left: 10%; */
+    visibility: hidden;
+  }
+
+  /* input,
+  label,
+  select {
+    margin: 7px 46px;
+  } */
+  .footer {
+    height: 800px;
+  }
+  .footer_contents {
+    height: 700px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* #access {
+    margin-left: 70px;
+  } */
+  .top {
+    display: none;
+  }
+}
